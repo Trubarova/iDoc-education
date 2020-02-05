@@ -1,4 +1,4 @@
-Firs task
+//First task
 let A = [21,5,87,13,6,47,2];
 for (i=0; i < A.length; i++) ;
 let B = [];
@@ -21,7 +21,7 @@ console.log (B);
 console.log(Math.max(A[i]);
   console.log(Math.min(A[i]);
 
-  Second task
+  //Second task
   var min = A[0],
     max = A[0];
   var pos_min = 0,
@@ -53,14 +53,14 @@ if (pos_min < pos_max) {
 
 console.log(B);
 
-Third task
+//Third task
 var swap = A[pos_min];
 A[pos_min] = A[pos_max];
 A[pos_max] = swap;
 
 console.log(swap);
 
-Fourth task
+//Fourth task
 for (i = 0, j = A.length - 1; i <= j; i++, j--) {
     var rev = A[j]
     A[j] = A[i];
@@ -69,7 +69,7 @@ for (i = 0, j = A.length - 1; i <= j; i++, j--) {
 
 console.log(A);
 
-Fifth task
+//Fifth task
 var min = A[0];
 
 for (i = 0; i < A.length; i++) {
