@@ -13,9 +13,8 @@
 
 
 //First task
-let A = [21,5,87,13,6,47,2];
-for (i=0; i < A.length; i++) ;
-let B = [];
+var A = [21,5,87,13,6,47,2];
+var B = [];
 var Mass = true;
 for(var i = 0; i < A.length; i++) {
 	for (var j = 2; j < A[i]; j++) {
