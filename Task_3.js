@@ -25,3 +25,28 @@ for (var i = 0; i < Arr.length; i++) {
     }
 }
 console.log(Arr);
+
+
+//Second task
+var n = 6;
+var m = 6;
+var Arr =  [[n], [m]];
+var mass = 0;
+for (var n = 0; n < Arr.length; n++) {
+    Arr[n] = Math.floor(Math.random()*10);
+}
+for (var m = 0; m < Arr.length; m++) {
+	Arr[m] = Math.floor(Math.random()*10);
+
+}
+console.log(Arr)
+		
+	function arraySum() {
+var sum = 0;
+for(var i = 0; i < Arr.length; i++){
+    sum += Arr[i];
+    }
+console.log(sum);
+}
+
+arraySum(Arr);
