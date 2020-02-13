@@ -49,4 +49,5 @@ for(var i = 0; i < Arr.length; i++){
 console.log(sum);
 }
 
-arraySum(Arr);
+var minValue = Math.min.apply(null, Arr)
+	console.log(minValue);
