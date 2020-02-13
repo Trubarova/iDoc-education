@@ -21,7 +21,7 @@ for (var i = 0; i < Arr.length; i++) {
     } else {
         Arr[i - 1] = Arr[i];
         Arr[i] = mass;
-        buffer = 0;
+        mass = 0;
     }
 }
 console.log(Arr);
