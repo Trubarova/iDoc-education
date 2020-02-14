@@ -28,26 +28,84 @@ console.log(Arr);
 
 
 //Second task
-var n = 6;
-var m = 6;
-var Arr =  [[n], [m]];
-var mass = 0;
-for (var n = 0; n < Arr.length; n++) {
-    Arr[n] = Math.floor(Math.random()*10);
-}
-for (var m = 0; m < Arr.length; m++) {
-	Arr[m] = Math.floor(Math.random()*10);
+var n = 5;
+var m = 5;
+A = new Array(n);
 
+for(i = 0; i < A.length; i++){
+    A[i] = new Array(m);
 }
-console.log(Arr)
-		
-	function arraySum() {
-var sum = 0;
-for(var i = 0; i < Arr.length; i++){
-    sum += Arr[i];
+
+for(i = 0; i < A.length; i++){
+    for(j = 0; j < A[i].length; j++){
+        A[i][j] = Math.floor(Math.random()*10);
     }
-console.log(sum);
+}
+console.log(A);
+
+var minSum = 0;
+var minSumBuffer = 0;
+var minSumPos = 0;
+for (i = 0; i < 1; i++) {
+    for (j = 0; j < A[i].length; j++) {
+        minSum += A[i][j];
+    }
+}
+for(i = 0; i < A.length; i++){
+    for(j = 0; j < A[i].length; j++){
+        minSumBuffer += A[i][j];
+    }
+    if( minSumBuffer < minSum ) {
+        minSum = minSumBuffer;
+        minSumPos = i;
+    }
+
+    minSumBuffer = 0;
+}
+console.log('Минимальная сумма ряда ' + minSumPos + ' равняется :' + minSum);
+
+//Third task
+var n = 5;
+var m = 5;
+A = new Array(n);
+
+for(i = 0; i < A.length; i++){
+    A[i] = new Array(m);
 }
 
-var minSum = Math.min.apply(null, Arr)
-	console.log(minSum);
+for(i = 0; i < A.length; i++){
+    for(j = 0; j < A[i].length; j++){
+        A[i][j] = Math.floor(Math.random()*10);
+    }
+}
+console.log(A);
+var maxSum = 0;
+var maxSumMass = 0;
+var maxSumPos = 0;
+
+for (i = 0; i < 1; i++) {
+    for (j = 0; j < A[i].length; j++) {
+        maxSum += A[i][j];
+    }
+}
+
+for (i = 0; i < 1; i++) {
+    for (j = 0; j < A[i].length; j++) {
+        maxSum += A[i][j];
+    }
+}
+
+for(i = 0; i < A.length; i++){
+    for(j = 0; j < A[i].length; j++){
+        maxSumMass += A[i][j];
+    }
+    if( maxSumMass < maxSum ) {
+        maxSum = maxSumMass;
+        maxSumPos = i;
+    }
+
+    maxSumMass = 0;
+}
+console.log('Максимальная сумма ряда ' + maxSumPos + ' равняется :' + maxSum);
+
+//Rourth task
