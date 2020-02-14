@@ -108,4 +108,30 @@ for(i = 0; i < A.length; i++){
 }
 console.log('Максимальная сумма ряда ' + maxSumPos + ' равняется :' + maxSum);
 
-//Rourth task
+//Fourth task
+     var n = 5;
+        var m = 4;
+var a =  [];
+        
+        function randomArray() {
+                for(var i = 0, c = 1; i < m; i++){
+                        a[i] = [];
+                        for(var j = 0; j < n; j++){
+                            a[i][j] = Math.floor(Math.random()*10);
+                                a[i][j] = c++;
+                        }
+                }
+        }
+        randomArray();
+        console.log("Начальный массив: " + a);
+        
+        function invertElements() {
+                var mass = 0;
+                for(var i = 0; i < m; i++){
+                        for(var j = 0; j < n; j+=2){
+                                mass = a[i][j];
+                   }
+                }
+        }
+        invertElements()
+        console.log("Инвертированный массив: " + a);
