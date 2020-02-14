@@ -44,7 +44,7 @@ for(i = 0; i < A.length; i++){
 console.log(A);
 
 var minSum = 0;
-var minSumBuffer = 0;
+var minSumMass = 0;
 var minSumPos = 0;
 for (i = 0; i < 1; i++) {
     for (j = 0; j < A[i].length; j++) {
@@ -53,14 +53,14 @@ for (i = 0; i < 1; i++) {
 }
 for(i = 0; i < A.length; i++){
     for(j = 0; j < A[i].length; j++){
-        minSumBuffer += A[i][j];
+        minSumMass += A[i][j];
     }
-    if( minSumBuffer < minSum ) {
-        minSum = minSumBuffer;
+    if( minSumMass < minSum ) {
+        minSum = minSumMass;
         minSumPos = i;
     }
 
-    minSumBuffer = 0;
+    minSumMass = 0;
 }
 console.log('Минимальная сумма ряда ' + minSumPos + ' равняется :' + minSum);
 
