@@ -59,3 +59,31 @@ if (sum1 > sum2) {
 } else if ( sum1 < sum2) {
 } return function Mass (Arr2);
  
+ 
+ //Task 3
+ function doMath(x,znak,y) {
+    var x = Math.floor(Math.random()*10);
+    var y = Math.floor(Math.random()*10);
+    var znak = [];
+     
+     switch (znak) {
+        case '+':
+        console.log(x + y);
+        break;
+        case '-':
+        console.log(x - y);
+        break;
+        case '*':
+        console.log(x * y);
+        break;
+        case '/':
+        console.log(x / y);
+        break;
+        case '%':
+        console.log(x % y);
+        break;
+        default:
+        console.log('Ошибка');
+
+     }
+ }
