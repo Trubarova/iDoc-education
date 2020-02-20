@@ -35,4 +35,27 @@ return A;
  
  
  //Task 2
+function Mass (Arr1, Arr2) {
+    var sum1 = 0;
+    var sum2 = 0;
+
+    for(var i = 0; i < Arr1.length; i++){
+        Arr1[i]= Math.floor(Math.random()*10);
+        if(typeof Arr1[i] == 'number'){
+    sum1+= Arr1[i];
+   }
+}
+
+for (var j = 0; j < Arr2.length; j++){
+    Arr2[j]= Math.floor(Math.random()*10);
+    if(typeof Arr2[j] == 'number'){
+        sum2 += Arr2[j];
+
+}
+
+}
+if (sum1 > sum2) {
+    return function Mass(Arr1) {
+} else if ( sum1 < sum2) {
+} return function Mass (Arr2);
  
