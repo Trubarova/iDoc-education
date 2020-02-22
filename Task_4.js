@@ -35,29 +35,31 @@ return A;
  
  
  //Task 2
-function Mass (Arr1, Arr2) {
-    var sum1 = 0;
-    var sum2 = 0;
+var Arr1 = [6,2,13,65,54,2];
+		var Arr2 = [31,5,9,78,4,21,3];
+		function arraySum (Array1, Array2) {
+			var sum1 = 0; 
+			
+			for ( i = 0; i < Arr1.length; i++){
+				sum1 += Arr1[i];
+			}
+			console.log(sum1);
+			var sum2 = 0;
 
-    for(var i = 0; i < Arr1.length; i++){
-        Arr1[i]= Math.floor(Math.random()*10);
-        if(typeof Arr1[i] == 'number'){
-    sum1+= Arr1[i];
-   }
+			for(i = 0; i < Arr2.length; i++) {
+				sum2 += Arr2[i];
+			}
+			console.log(sum2);
+		
+
+
+		if (sum1 > sum2) {
+			console.log(Arr1);
+		} else {
+			console.log(Arr2);
+		}
 }
-
-for (var j = 0; j < Arr2.length; j++){
-    Arr2[j]= Math.floor(Math.random()*10);
-    if(typeof Arr2[j] == 'number'){
-        sum2 += Arr2[j];
-
-}
-
-}
-if (sum1 > sum2) {
-    return function Mass(Arr1) {
-} else if ( sum1 < sum2) {
-} return function Mass (Arr2);
+arraySum(Arr1,  Arr2);
  
  
  //Task 3
