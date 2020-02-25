@@ -89,3 +89,11 @@ arraySum(Arr1,  Arr2);
 
      }
  }
+
+
+//Task 4
+let str = 'Hello world';
+        function showMessage(str) {
+        console.log('Hello world'.replace(/l|d/g,''));
+        }
+        showMessage(str);
