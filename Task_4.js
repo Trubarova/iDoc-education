@@ -97,3 +97,21 @@ let str = 'Hello world';
         console.log('Hello world'.replace(/l|d/g,''));
         }
         showMessage(str);
+
+
+
+
+
+
+Написать функцию вывода одномерного массива через разделитель в документ. (без разделителя)
+//Lection1
+function Mass(Arr) {   
+    var n = 8;
+var Arr = new Array (n);
+var mass = 0;
+
+for (var i = 0; i < Arr.length; i++) {
+    Arr[i] = Math.floor(Math.random()*10);
+}
+     }
+document.write(Mass);
