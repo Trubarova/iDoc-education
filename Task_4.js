@@ -99,6 +99,18 @@ let str = 'Hello world';
         showMessage(str);
 
 
+//Task 5
+function filter (input,predicateFunction) {
+          var B = [];
+        for ( i=0;i < input.length; i++){
+          if (predicateFunction(input[i])){ 
+          B.push(input[i]);
+        }
+      }
+      return B
+  }
+
+
 
 
 
