@@ -44,18 +44,25 @@ console.log( result );
 function sum(x, y) {
     return x + y;
 }
-var result = sum(2, 3);
-console.log(result)
+var result = sum(16, -23);
+console.log(result);
 
 function div(x, y) {
     if ( y != 0) {
         return x / y;
-        var result = div(2, 3);
+        var result = div(16, -23);
         console.log(result);
 }
 
 function mul(x, y){
     return x * y;
 }
-var result = mul(2, 3);
+var result = mul(16, -23);
 console.log(result);
+    
+    //Task 4
+    function factorial(n) {
+  return (n != 1) ? n * factorial(n - 1) : 1;
+}
+
+console.log( factorial(6) );
