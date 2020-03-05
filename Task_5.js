@@ -33,3 +33,12 @@ function returnArray() {
 
 
 //Task 2
+function pow(a, b) {
+  return a ** b;
+}
+
+var result = pow(2, 3);
+console.log( result );
+
+//Task 3
+
