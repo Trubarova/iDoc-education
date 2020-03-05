@@ -41,4 +41,21 @@ var result = pow(2, 3);
 console.log( result );
 
 //Task 3
+function sum(x, y) {
+    return x + y;
+}
+var result = sum(2, 3);
+console.log(result)
 
+function div(x, y) {
+    if ( y != 0) {
+        return x / y;
+        var result = div(2, 3);
+        console.log(result);
+}
+
+function mul(x, y){
+    return x * y;
+}
+var result = mul(2, 3);
+console.log(result);
