@@ -24,7 +24,8 @@ function returnArray() {
         if ( A[i].length % 2 != 0 ) {
             B.push(A[i][Math.floor(A[i].length / 2)]);
         } else {
-        	B.push(A[i][Math.floor(A[i].length / 2)- 1]);
+        	B.push(A[i][Math.floor(A[i].length / 2)]),
+                B.push(A[i][Math.floor(A[i].length / 2)-1]);
             
         }
     }
