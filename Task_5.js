@@ -33,36 +33,51 @@ function returnArray() {
 
 
 //Task 2
-function pow(a, b) {
-  return a ** b;
+function power(a, b) {
+  return Math.power(a,b);
+}
+function doFunction(a,b,power) {
+    return power(a,b);
 }
 
-var result = pow(2, 3);
-console.log( result );
+console.log(doFunction(2,3,power));
 
 //Task 3
-function sum(x, y) {
-    return x + y;
+function sum(a, b) {
+  return Math.sum(a,b);
 }
-var result = sum(16, -23);
-console.log(result);
-
-function div(x, y) {
-    if ( y != 0) {
-        return x / y;
-        var result = div(16, -23);
-        console.log(result);
+function doFunction(a,b,sum) {
+    return sum(a,b);
 }
 
-function mul(x, y){
-    return x * y;
+console.log(doFunction(16,-23,sum));
+
+    
+    function div(a, b) {
+  return Math.div(a,b);
 }
-var result = mul(16, -23);
-console.log(result);
+function doFunction(a,b,div) {
+    return div(a,b);
+}
+
+console.log(doFunction(16,-23,div));
+
+
+function mul(a, b) {
+  return Math.mul(a,b);
+}
+function doFunction(a,b,mul) {
+    return power(a,b);
+}
+
+console.log(doFunction(16,-23,mul));
     
     //Task 4
     function factorial(n) {
   return (n != 1) ? n * factorial(n - 1) : 1;
 }
+    function doFunction(n,factorial){
+        return factiorial(n);
+    }
 
-console.log( factorial(6) );
+console.log( doFunction(6, factorial) );
