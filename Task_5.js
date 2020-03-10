@@ -68,7 +68,7 @@ function mul(a, b) {
   return Math.mul(a,b);
 }
 function doFunction(a,b,mul) {
-    return power(a,b);
+    return mul(a,b);
 }
 
 console.log(doFunction(16,-23,mul));
